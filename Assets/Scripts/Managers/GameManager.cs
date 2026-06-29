@@ -23,11 +23,15 @@ public class GameManager : MonoBehaviour
     public event Action OnCorrectAnswer;
     public event Action OnWrongAnswer;
 
+    public GameObject TheEndTxt;
+
     bool isQuestionChoosen;
 
     int buttonIndex = 0;
 
     int splineIndex = 0;
+
+    int questionIndex = 0;
 
     private void Awake()
     {
@@ -48,10 +52,9 @@ public class GameManager : MonoBehaviour
         questionPanelParent.SetActive(true);
 
         isQuestionChoosen = !isQuestionChoosen;
-
         Debug.Log("isquestion choosen:::: "  + isQuestionChoosen);
 
-        if (isQuestionChoosen)
+        if (isQuestionChoosen && questionIndex <= 2)
         {
             int randomIndex;
             randomIndex = UnityEngine.Random.Range(0, questionCampaignMCQs.Count);
@@ -59,7 +62,7 @@ public class GameManager : MonoBehaviour
 
             questionCampaignMCQs[randomIndex].SetActive(true);
         }
-        else
+        else if(!isQuestionChoosen || questionIndex > 2)
         {
             int randomIndex;
             randomIndex = UnityEngine.Random.Range(0, questionMedicalMCQs.Count);
@@ -68,10 +71,17 @@ public class GameManager : MonoBehaviour
             questionMedicalMCQs[randomIndex].SetActive(true);
         }
 
+        questionIndex++;
+        Debug.Log("question index: " + questionIndex); 
     }
 
     public void DisabledSplineAnimate()
     {
+        if (splineIndex >= splineAnimate.Length)
+        {
+            Debug.Log("spline achieved");
+            return;
+        }
         splineAnimate[splineIndex].enabled = false;
         splineIndex++;
         Debug.Log("Spline index: " + splineIndex);
@@ -79,6 +89,12 @@ public class GameManager : MonoBehaviour
 
     public void EnabledSplineAnimate()
     {
+        if(splineIndex >= splineAnimate.Length)
+        {
+            Debug.Log("spline achieved");
+            return;
+        }
+    
         splineAnimate[splineIndex].enabled = true;
         Debug.Log("Enabled spline animate");
     }
@@ -98,11 +114,25 @@ public class GameManager : MonoBehaviour
         }
 
         questionPanelParent.SetActive(false);
+
+        if (buttonIndex >= buttonInteractable.Length)
+        {
+            TheEndTxt.gameObject.SetActive(true);
+            Debug.Log("Button Index Achieved:::");
+            return;
+        }
     }
 
     public void AppearingHook()
     {
         HideQuestions();
+        if (buttonIndex >= buttonInteractable.Length)
+        {
+            
+            Debug.Log("Button Index Achieved:::");
+            return;
+        }
+
         buttonInteractable[buttonIndex].SetActive(true);
         buttonIndex++;
         Debug.Log("Button index: " + buttonIndex);

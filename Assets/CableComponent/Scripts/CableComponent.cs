@@ -86,7 +86,7 @@ public class CableComponent : MonoBehaviour
 		line.endWidth = cableWidth;
 		line.positionCount = useSplineSmoothing ? splineResolution : (segments + 1);
 		line.material = cableMaterial;
-		line.GetComponent<Renderer>().enabled = true;
+		//line.GetComponent<Renderer>().enabled = true;
 	}
 
 	#endregion
