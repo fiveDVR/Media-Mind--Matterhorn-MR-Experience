@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestionSO : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class QuestionSO : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI[] answerslot;
 
+    [SerializeField]
+    private AudioSource[] audioclips;
+    public Image[] images;
+    public Sprite sprite;
+
+    
 
     private void Awake()
     {
@@ -27,13 +34,24 @@ public class QuestionSO : MonoBehaviour
         if (question.IsCorrectAnswer[index])
         {
             Debug.Log("Correct Answer!");
-            GameManager.Instance.CorrectAnswer();
+
+            audioclips[0].Play();
+            //GameManager.Instance.CorrectAnswer();
+            Invoke(nameof(DelayAnswer), 0.5f); // Delay the correct answer action by 1 second
         }
         else
         {
             Debug.Log("Wrong Answer!");
-            GameManager.Instance.WrongAnswer();
+            audioclips[1].Play();
+            images[index].sprite = sprite;
+            //GameManager.Instance.WrongAnswer();
+
+            Invoke(nameof(DelayAnswer), 0.5f);
         }
     }
 
+    private void DelayAnswer()
+    {
+        GameManager.Instance.AppearingHook();
+    }
 }

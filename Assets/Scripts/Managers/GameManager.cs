@@ -13,10 +13,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> questionCampaignMCQs, questionMedicalMCQs;
 
+    [SerializeField]
+    private GameObject[] buttonInteractable;
+
     public event Action OnCorrectAnswer;
     public event Action OnWrongAnswer;
 
     bool isQuestionChoosen;
+
+    int buttonIndex = 0;
 
     private void Awake()
     {
@@ -76,6 +81,14 @@ public class GameManager : MonoBehaviour
         questionPanelParent.SetActive(false);
     }
 
+
+    public void AppearingHook()
+    {
+        HideQuestions();
+        buttonInteractable[buttonIndex].SetActive(true);
+        buttonIndex++;
+        Debug.Log("Button index: " + buttonIndex);
+    }
 
     public void CorrectAnswer()
     {
