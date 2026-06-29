@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228a2a438c14f64e96b4dc91e8bdb3d, type: 3}
+  m_Name: Question-03
+  m_EditorClassIdentifier: Assembly-CSharp::Question
+  HeaderLine: What is most distinctive about the Matterhorn's shape?
+  AsnwerSlot:
+  - A) It is perfectly flat-topped, like a mesa
+  - B) It has a gentle slope on all four sides
+  - C) It is entirely covered in ice year-round
+  - D) Its near-perfect pyramid shape - four steep rock faces pointing to the four
+    cardinal compass directions
+  IsCorrectAnswer: 00000001

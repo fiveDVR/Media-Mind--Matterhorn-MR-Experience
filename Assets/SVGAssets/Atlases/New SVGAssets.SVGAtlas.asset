@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d995787f488229646bc6ee47ced3138d, type: 3}
+  m_Name: New SVGAssets.SVGAtlas
+  m_EditorClassIdentifier: Assembly-CSharp::SVGAssets.SVGAtlas
+  m_GUID: 528d8659184f4e1a995785ebe1edc118
+  m_OutputFolder: Assets/SVGAssets/Atlases
+  m_OffsetScale: 1
+  m_Pow2Textures: 1
+  m_MaxTexturesDimension: 4096
+  m_SpritesBorder: 1
+  m_ClearColor: {r: 1, g: 1, b: 1, a: 0}
+  m_FastUpload: 1
+  m_SvgList:
+  - TxtAsset: {fileID: 4900000, guid: 434bcf25796d621498a5a56fd8ece68c, type: 3}
+    Scale: 1
+    SeparateGroups: 0
+    Instantiable: 1
+    InstanceBaseIdx: 0
+  - TxtAsset: {fileID: 4900000, guid: 99798e91498ee6844be60e34b706f06a, type: 3}
+    Scale: 1
+    SeparateGroups: 0
+    Instantiable: 1
+    InstanceBaseIdx: 0
+  - TxtAsset: {fileID: 4900000, guid: db2dc804bb063db48a1400058b4a553f, type: 3}
+    Scale: 1
+    SeparateGroups: 0
+    Instantiable: 1
+    InstanceBaseIdx: 0
+  m_GeneratedTexturesFiles:
+  - Path: Assets/SVGAssets/Atlases/New SVGAssets.SVGAtlas/528d8659184f4e1a995785ebe1edc118/Textures/texture0.asset
+    Object: {fileID: 2800000, guid: 74eca952a98301d4d9489b26c0c3116a, type: 2}
+  m_GeneratedSpritesFiles:
+    m_KeysList:
+    - TxtAsset: {fileID: 4900000, guid: db2dc804bb063db48a1400058b4a553f, type: 3}
+      ElemIdx: 0
+    - TxtAsset: {fileID: 4900000, guid: 99798e91498ee6844be60e34b706f06a, type: 3}
+      ElemIdx: 0
+    - TxtAsset: {fileID: 4900000, guid: 434bcf25796d621498a5a56fd8ece68c, type: 3}
+      ElemIdx: 0
+    m_ValuesList:
+    - Path: Assets/SVGAssets/Atlases/New SVGAssets.SVGAtlas/528d8659184f4e1a995785ebe1edc118/Sprites/Wind
+        Icon_0.asset
+      SpriteRef:
+        TxtAsset: {fileID: 4900000, guid: db2dc804bb063db48a1400058b4a553f, type: 3}
+        ElemIdx: 0
+      SpriteData:
+        Sprite: {fileID: 21300000, guid: 9d05baeb4ebb1e542946cb2ee632310b, type: 2}
+        Pivot: {x: 0.5, y: 0.5}
+        Border: {x: 0, y: 0, z: 0, w: 0}
+        ZOrder: 0
+        OriginalX: 3
+        OriginalY: 12
+        DstViewportWidth: 44
+        DstViewportHeight: 44
+        GenerationScale: 1
+        InCurrentInstancesGroup: 1
+      InstantiatedWidgetType: 1
+    - Path: Assets/SVGAssets/Atlases/New SVGAssets.SVGAtlas/528d8659184f4e1a995785ebe1edc118/Sprites/Rain
+        Icon_0.asset
+      SpriteRef:
+        TxtAsset: {fileID: 4900000, guid: 99798e91498ee6844be60e34b706f06a, type: 3}
+        ElemIdx: 0
+      SpriteData:
+        Sprite: {fileID: 21300000, guid: 199c9da77dafb6f4c80e8fb9511e0de8, type: 2}
+        Pivot: {x: 0.5, y: 0.5}
+        Border: {x: 0, y: 0, z: 0, w: 0}
+        ZOrder: 0
+        OriginalX: 5
+        OriginalY: 9
+        DstViewportWidth: 44
+        DstViewportHeight: 44
+        GenerationScale: 1
+        InCurrentInstancesGroup: 1
+      InstantiatedWidgetType: 1
+    - Path: Assets/SVGAssets/Atlases/New SVGAssets.SVGAtlas/528d8659184f4e1a995785ebe1edc118/Sprites/Birds
+        Icon_0.asset
+      SpriteRef:
+        TxtAsset: {fileID: 4900000, guid: 434bcf25796d621498a5a56fd8ece68c, type: 3}
+        ElemIdx: 0
+      SpriteData:
+        Sprite: {fileID: 21300000, guid: 061dfad3fbb612040a142e556fdaa1bc, type: 2}
+        Pivot: {x: 0.5, y: 0.5}
+        Border: {x: 0, y: 0, z: 0, w: 0}
+        ZOrder: 0
+        OriginalX: 5
+        OriginalY: 9
+        DstViewportWidth: 44
+        DstViewportHeight: 44
+        GenerationScale: 1
+        InCurrentInstancesGroup: 1
+      InstantiatedWidgetType: 1
+  m_EditorGenerationScale: 1
+  m_SvgListHashOld: FFA58809B63448D3A63DC2D80788CD26
+  m_SvgListHashCurrent: FFA58809B63448D3A63DC2D80788CD26
+  m_GeneratedSpritesLists:
+    m_KeysList: fa7b0200027c0200fe7b0200
+    m_ValuesList:
+    - Sprites:
+      - TxtAsset: {fileID: 4900000, guid: db2dc804bb063db48a1400058b4a553f, type: 3}
+        ElemIdx: 0
+    - Sprites:
+      - TxtAsset: {fileID: 4900000, guid: 99798e91498ee6844be60e34b706f06a, type: 3}
+        ElemIdx: 0
+    - Sprites:
+      - TxtAsset: {fileID: 4900000, guid: 434bcf25796d621498a5a56fd8ece68c, type: 3}
+        ElemIdx: 0
+  m_SpritesPreviewSize: 32
+  m_ReferenceWidth: 1105
+  m_ReferenceHeight: 548
+  m_DeviceTestWidth: 1105
+  m_DeviceTestHeight: 548
+  m_ScaleType: 7
+  m_Match: 0.5

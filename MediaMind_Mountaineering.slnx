@@ -1,0 +1,22 @@
+﻿<Solution>
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
+  <Project Path="Unity.XR.Hands.Samples.VisualizerSample.csproj" />
+  <Project Path="MRTemplate.csproj" />
+  <Project Path="SimpleScrollSnap.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Assembly-CSharp-firstpass.csproj" />
+  <Project Path="GifImporter.Editor.csproj" />
+  <Project Path="SimpleScrollSnapEditor.csproj" />
+  <Project Path="SimpleInspectorAttributes.csproj" />
+  <Project Path="Utilities.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.csproj" />
+  <Project Path="CopyrightNoticeEditor.csproj" />
+  <Project Path="SimpleInspectorAttributesEditor.csproj" />
+  <Project Path="GifForUnity.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.csproj" />
+  <Project Path="UtilitiesEditor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj" />
+</Solution>

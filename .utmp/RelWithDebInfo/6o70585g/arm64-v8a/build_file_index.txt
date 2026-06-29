@@ -1,0 +1,2 @@
+D:\UnityProjects\MediaMind_Mountaineering\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+D:\UnityProjects\MediaMind_Mountaineering\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

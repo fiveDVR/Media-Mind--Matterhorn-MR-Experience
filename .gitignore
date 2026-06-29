@@ -1,0 +1,51 @@
+# This .gitignore file is configured for Unity projects.
+# It prevents temporary and auto-generated files from being tracked by Git.
+
+# Unity auto-generated folders (do NOT track these)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Memory dumps and large builds
+*.apk
+*.unitypackage
+*.obb
+*.gltf
+*.glb
+
+# Crash logs
+sysinfo.txt
+crash.dmp
+
+# Visual Studio / Rider / MonoDevelop generated files
+.vs/
+.idea/
+.gradle/
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+/*.pdb
+/*.opendb
+/*.VC.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Assets/MRTemplateAssets/Materials/Skybox/Skybox01_2d_seams.png.meta
+Assets/MRTemplateAssets/Materials/Skybox/Skybox01_2d_seams.png
