@@ -10,6 +10,9 @@ public class FollowCameraY : MonoBehaviour {
     [Tooltip("Player to follow on the Z axis")]
     public Transform player;
 
+    [Tooltip("X offset from the camera's position.")]
+    public float xOffset = 0f;
+
     [Tooltip("Y offset from the camera's position.")]
     public float yOffset = -0.2f;
 
@@ -20,15 +23,10 @@ public class FollowCameraY : MonoBehaviour {
     [Range(1f, 20f)]
     public float smoothSpeed = 5f;
 
-    private float initialX;
-
     void Start()
     {
         if (target == null)
             target = Camera.main.transform;
-
-        // Keep X fixed forever
-        initialX = transform.position.x;
     }
 
     void LateUpdate()
@@ -36,14 +34,16 @@ public class FollowCameraY : MonoBehaviour {
         if (target == null || player == null)
             return;
 
+        float targetX = target.position.x + xOffset;
         float targetY = target.position.y + yOffset;
         float targetZ = player.position.z + zOffset;
 
+        float smoothedX = Mathf.Lerp(transform.position.x, targetX, smoothSpeed * Time.deltaTime);
         float smoothedY = Mathf.Lerp(transform.position.y, targetY, smoothSpeed * Time.deltaTime);
         float smoothedZ = Mathf.Lerp(transform.position.z, targetZ, smoothSpeed * Time.deltaTime);
 
         transform.position = new Vector3(
-            initialX,
+            smoothedX,
             smoothedY,
             smoothedZ
         );

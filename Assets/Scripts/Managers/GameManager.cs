@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,12 +17,17 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] buttonInteractable;
 
+    [SerializeField]
+    private SplineAnimate[] splineAnimate;
+
     public event Action OnCorrectAnswer;
     public event Action OnWrongAnswer;
 
     bool isQuestionChoosen;
 
     int buttonIndex = 0;
+
+    int splineIndex = 0;
 
     private void Awake()
     {
@@ -64,6 +70,19 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void DisabledSplineAnimate()
+    {
+        splineAnimate[splineIndex].enabled = false;
+        splineIndex++;
+        Debug.Log("Spline index: " + splineIndex);
+    }
+
+    public void EnabledSplineAnimate()
+    {
+        splineAnimate[splineIndex].enabled = true;
+        Debug.Log("Enabled spline animate");
+    }
+
     public void HideQuestions()
     {
        
@@ -80,7 +99,6 @@ public class GameManager : MonoBehaviour
 
         questionPanelParent.SetActive(false);
     }
-
 
     public void AppearingHook()
     {

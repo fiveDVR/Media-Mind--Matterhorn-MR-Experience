@@ -6,6 +6,8 @@ public class BoxHitToAppearsQuestion : MonoBehaviour
     public GameObject player;
     public GameObject splineContainer;
     public GameObject buttonInteractable;
+ 
+    int index;
 
     private float resetCameraValue = 3f; // Example initial position value for the camera's Y-axis
     private void OnTriggerEnter(Collider other)
@@ -14,7 +16,8 @@ public class BoxHitToAppearsQuestion : MonoBehaviour
         if(other.gameObject.CompareTag("Rope"))
         {
             Debug.Log("Rope has hit the box, character has flying");
-            player.GetComponent<SplineAnimate>().enabled = true;
+            //player.GetComponent<SplineAnimate>().enabled = true;
+            GameManager.Instance.EnabledSplineAnimate();
             
         }
     
@@ -26,6 +29,8 @@ public class BoxHitToAppearsQuestion : MonoBehaviour
             //GameManager.Instance.WrongAnswer();
             GetComponent<Collider>().enabled = false;
             splineContainer.SetActive(false);
+            //player.GetComponent<SplineAnimate>().enabled = false;
+            GameManager.Instance.DisabledSplineAnimate();
             buttonInteractable.SetActive(false);
         }
     }
