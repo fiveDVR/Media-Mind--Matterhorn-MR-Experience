@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   HeaderLine: ' How tall is the Matterhorn?'
   AsnwerSlot:
-  - A) 3,200 metres (10,499 feet)
-  - B) 5,895 metres (19,341 feet)
-  - C) 6,962 metres (22,841 feet)
-  - D) 4,478 metres (14,692 feet) above sea level
+  - 3,200 metres (10,499 feet)
+  - 5,895 metres (19,341 feet)
+  - 6,962 metres (22,841 feet)
+  - 4,478 metres (14,692 feet) above sea level
   IsCorrectAnswer: 00000001
+  Reference: 

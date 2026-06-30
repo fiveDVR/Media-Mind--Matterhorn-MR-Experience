@@ -14,9 +14,15 @@ public class QuestionSO : MonoBehaviour
     private TextMeshProUGUI[] answerslot;
 
     [SerializeField]
+    private TextMeshProUGUI reference;
+
+    [SerializeField]
     private AudioSource[] audioclips;
     public Image[] images;
-    public Sprite sprite;
+
+    public Sprite CorrectAnswer;
+    public Sprite WrongAnswer;
+    public Sprite Defaultsprite;
 
     
 
@@ -27,6 +33,8 @@ public class QuestionSO : MonoBehaviour
         {
             answerslot[i].text = question.AsnwerSlot[i];
         }
+
+        reference.text = question.Reference;
     }
 
     public void CheckAnswer(int index)
@@ -36,22 +44,64 @@ public class QuestionSO : MonoBehaviour
             Debug.Log("Correct Answer!");
 
             audioclips[0].Play();
+
+            for (int i = 0; i < images.Length; i++)
+            {
+                if (i != index)
+                {
+                    images[i].sprite = WrongAnswer;
+                }
+                //Debug.Log("Correct Answer index: " + i + "  " + index);
+
+            }
+
+            images[index].sprite = CorrectAnswer;
+
+            reference.gameObject.SetActive(true);
+
             //GameManager.Instance.CorrectAnswer();
-            Invoke(nameof(DelayAnswer), 0.5f); // Delay the correct answer action by 1 second
+            Invoke(nameof(DelayAnswer), 3f); // Delay the correct answer action by 1 second
         }
         else
         {
             Debug.Log("Wrong Answer!");
             audioclips[1].Play();
-            images[index].sprite = sprite;
+
+            for (int i = 0; i < images.Length; i++)
+            {
+                images[i].sprite = WrongAnswer;
+            }
+
+
+            for (int i = 0; i < images.Length; i++)
+            {
+                if (question.IsCorrectAnswer[i])
+                {
+                    images[i].sprite = CorrectAnswer;
+                }
+
+            }
+
+            reference.gameObject.SetActive(true);
+
+            //images[index].sprite = WrongAnswer;
+
             //GameManager.Instance.WrongAnswer();
 
-            Invoke(nameof(DelayAnswer), 0.5f);
+            Invoke(nameof(DelayAnswer), 3f);
         }
     }
 
-    private void DelayAnswer()
+
+private void DelayAnswer()
     {
+        for(int i = 0; i < images.Length; i++)
+        {
+            images[i].sprite = Defaultsprite;
+        }
+
+        reference.gameObject.SetActive(false);
+
         GameManager.Instance.AppearingHook();
     }
 }

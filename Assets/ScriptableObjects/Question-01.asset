@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   HeaderLine: ' Where is the Matterhorn located?'
   AsnwerSlot:
-  - A) In the French Alps on the French-Swiss border
-  - B) In the Austrian Alps near Innsbruck
-  - C) In the Italian Dolomites near Bolzano
-  - 'D) On the border between Switzerland and Italy in the Pennine Alps '
+  - In the French Alps on the French-Swiss border
+  - In the Austrian Alps near Innsbruck
+  - In the Italian Dolomites near Bolzano
+  - 'On the border between Switzerland and Italy in the Pennine Alps '
   IsCorrectAnswer: 00000001
+  Reference: 

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228a2a438c14f64e96b4dc91e8bdb3d, type: 3}
+  m_Name: Question-21
+  m_EditorClassIdentifier: Assembly-CSharp::Question
+  HeaderLine: Which of the following statements about multidisciplinary management
+    in gastric cancer is most accurate?
+  AsnwerSlot:
+  - Surgery alone determines treatment planning in most cases
+  - Management is optimized through multidisciplinary discussion involving surgery,
+    medical oncology, pathology, radiology, and gastroenterology
+  - MDT discussion is only useful in metastatic disease
+  - ) Pathology review has limited impact on treatment strategy
+  IsCorrectAnswer: 00010000
+  Reference: ) Pathology review has limited impact on treatment strategy

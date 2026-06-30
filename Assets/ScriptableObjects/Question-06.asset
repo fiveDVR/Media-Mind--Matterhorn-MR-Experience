@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   HeaderLine: Which gender is slightly more likely to develop gastric cancer?
   AsnwerSlot:
-  - A) Men
-  - B) Women
-  - C) Equal risk
-  - D) Neither
+  - Men
+  - Women
+  - Equal risk
+  - Neither
   IsCorrectAnswer: 01000000
+  Reference: "2.\tXing Y, Hosaka H, Moki F, et al. Gender Differences in Patients
+    with Gastric Adenocarcinoma. J Clin Med. 2024 Apr 25;13(9):2524."

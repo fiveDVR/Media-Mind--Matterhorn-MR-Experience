@@ -15,8 +15,10 @@ MonoBehaviour:
   HeaderLine: Which of the following is the gold standard for diagnosing gastric
     adenocarcinoma?
   AsnwerSlot:
-  - A) Abdominal X-ray
-  - B) Upper GI endoscopy with biopsy
-  - C) CT scan without biopsy
-  - D) MRI alone
+  - Abdominal X-ray
+  - Upper GI endoscopy with biopsy
+  - CT scan without biopsy
+  - MRI alone
   IsCorrectAnswer: 00010000
+  Reference: "7.\tCorrea P. Gastric cancer: overview. Gastroenterol Clin North Am.
+    2013 Jun;42(2):211-7."

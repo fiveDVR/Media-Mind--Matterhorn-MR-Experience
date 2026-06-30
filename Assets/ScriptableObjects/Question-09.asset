@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   HeaderLine: 'Most common symptom in early gastric cancer is:'
   AsnwerSlot:
-  - A) Severe abdominal pain
-  - B) Nonspecific dyspepsia / epigastric discomfort
-  - C) Hematemesis
-  - D) Jaundice
+  - Severe abdominal pain
+  - Nonspecific dyspepsia / epigastric discomfort
+  - Hematemesis
+  - Jaundice
   IsCorrectAnswer: 00010000
+  Reference: "5.\tMaconi G, Manes G, Porro GB. Role of symptoms in diagnosis and
+    outcome of gastric cancer. World J Gastroenterol. 2008 Feb 28;14(8):1149-55."

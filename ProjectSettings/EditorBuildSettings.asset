@@ -5,11 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
-    path: Assets/Scenes/Mountaineering.unity
+    path: Assets/Scenes/Intro.unity
+    guid: c4ad6fb7d59a9514da6d4c003b06ff7a
+  - enabled: 1
+    path: Assets/Scenes/Matterhorn.unity
     guid: ad5232917b5ef8e40a5bce6b7a26c6af
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}

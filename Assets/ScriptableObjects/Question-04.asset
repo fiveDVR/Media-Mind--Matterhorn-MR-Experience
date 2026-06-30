@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   HeaderLine: Who first reached the summit of the Matterhorn, and when?
   AsnwerSlot:
-  - A) Edward Whymper's team on 14 July 1865
-  - B) Reinhold Messner solo in 1965
-  - C) Yvon Chouinard and Doug Tompkins in 1968
-  - D) Guido Rey and Luigi Amedeo in 1899
+  - Edward Whymper's team on 14 July 1865
+  - Reinhold Messner solo in 1965
+  - Yvon Chouinard and Doug Tompkins in 1968
+  - Guido Rey and Luigi Amedeo in 1899
   IsCorrectAnswer: 01000000
+  Reference: 

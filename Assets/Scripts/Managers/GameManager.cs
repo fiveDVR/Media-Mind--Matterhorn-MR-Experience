@@ -46,10 +46,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-    public void AppearsQuestion()
-    {
-        questionPanelParent.SetActive(true);
+    /*
+     * 
+     * 
+     * questionPanelParent.SetActive(true);
 
         isQuestionChoosen = !isQuestionChoosen;
         Debug.Log("isquestion choosen:::: "  + isQuestionChoosen);
@@ -73,6 +73,18 @@ public class GameManager : MonoBehaviour
 
         questionIndex++;
         Debug.Log("question index: " + questionIndex); 
+     * 
+     */
+
+    public void AppearsQuestion()
+    {
+        questionPanelParent.SetActive(true);
+
+        int randomIndex;
+        randomIndex = UnityEngine.Random.Range(0, questionMedicalMCQs.Count);
+        Debug.Log("Random index: " + randomIndex);
+
+        questionMedicalMCQs[randomIndex].SetActive(true);
     }
 
     public void DisabledSplineAnimate()

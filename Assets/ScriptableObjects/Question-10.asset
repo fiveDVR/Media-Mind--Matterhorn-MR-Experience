@@ -15,8 +15,10 @@ MonoBehaviour:
   HeaderLine: 'The 5-year survival rate for resectable gastric cancer remains modest.
     This is largely due to:'
   AsnwerSlot:
-  - A) High rates of early diagnosis
-  - B) Excellent response to all chemotherapy
-  - C) High rates of recurrence even after curative surgery
-  - D) Low incidence of lymph node involvement
+  - High rates of early diagnosis
+  - Excellent response to all chemotherapy
+  - High rates of recurrence even after curative surgery
+  - Low incidence of lymph node involvement
   IsCorrectAnswer: 00000100
+  Reference: "6.\tVincze \xC1. Endoscopic diagnosis and treatment in gastric cancer:
+    Current evidence and new perspectives. Front Surg. 2023 Apr 4;10:1122454. "

@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b228a2a438c14f64e96b4dc91e8bdb3d, type: 3}
-  m_Name: Question-07
+  m_Name: Question-14
   m_EditorClassIdentifier: Assembly-CSharp::Question
-  HeaderLine: Gastric cancer and gastroesophageal junction cancer are most commonly
-    which histological type?
+  HeaderLine: Which histologic subtype accounts for the majority of gastric and gastroesophageal
+    junction cancers?
   AsnwerSlot:
   - Squamous cell carcinoma
   - Adenocarcinoma
-  - Sarcoma
-  - Lymphoma
+  - Neuroendocrine carcinoma
+  - Gastrointestinal stromal tumor
   IsCorrectAnswer: 00010000
-  Reference: "3.\tHu B, El Hajj N, Sittler S, et al. Gastric cancer: Classification,
-    histology and application of molecular pathology. J Gastrointest Oncol. 2012
-    Sep;3(3):251-61."
+  Reference: 'Reference: Hu B, El Hajj N, Sittler S, et al. Gastric cancer: Classification,
+    histology and application of molecular pathology. J Gastrointest Oncol. 2012;3(3):251-261. '

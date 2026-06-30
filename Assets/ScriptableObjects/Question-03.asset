@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Question
   HeaderLine: What is most distinctive about the Matterhorn's shape?
   AsnwerSlot:
-  - A) It is perfectly flat-topped, like a mesa
-  - B) It has a gentle slope on all four sides
-  - C) It is entirely covered in ice year-round
-  - D) Its near-perfect pyramid shape - four steep rock faces pointing to the four
-    cardinal compass directions
+  - It is perfectly flat-topped, like a mesa
+  - It has a gentle slope on all four sides
+  - It is entirely covered in ice year-round
+  - Its near-perfect pyramid shape - four steep rock faces pointing to the four cardinal
+    compass directions
   IsCorrectAnswer: 00000001
+  Reference: 

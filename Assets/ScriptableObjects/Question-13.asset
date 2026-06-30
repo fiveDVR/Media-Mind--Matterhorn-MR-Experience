@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b228a2a438c14f64e96b4dc91e8bdb3d, type: 3}
-  m_Name: Question-05
+  m_Name: Question-13
   m_EditorClassIdentifier: Assembly-CSharp::Question
-  HeaderLine: Which of the following is a common risk factor for gastric cancer?
+  HeaderLine: Which of the following is the most established modifiable risk factor
+    for gastric adenocarcinoma worldwide?
   AsnwerSlot:
-  - Smoking
-  - Family history
+  - Ulcerative colitis
   - Helicobacter pylori infection
-  - All of the above
-  IsCorrectAnswer: 00000001
-  Reference: "1.\tKo KP. Risk Factors of Gastric Cancer and Lifestyle Modification
-    for Prevention. J Gastric Cancer. 2024 Jan;24(1):99-107."
+  - Chronic hepatitis B
+  - Pancreatitis
+  IsCorrectAnswer: 00010000
+  Reference: 'Reference: Ko KP. Risk Factors of Gastric Cancer and Lifestyle Modification
+    for Prevention. J Gastric Cancer. 2024;24(1):99-107. '

@@ -6,5 +6,6 @@ public class Question : ScriptableObject
     public string HeaderLine;
     public string[] AsnwerSlot;
     public bool[] IsCorrectAnswer;
+    public string Reference;
 
 }

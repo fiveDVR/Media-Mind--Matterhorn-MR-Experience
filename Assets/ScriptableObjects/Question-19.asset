@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b228a2a438c14f64e96b4dc91e8bdb3d, type: 3}
-  m_Name: Question-08
+  m_Name: Question-19
   m_EditorClassIdentifier: Assembly-CSharp::Question
-  HeaderLine: After surgery, recurrence of gastric cancer is...
+  HeaderLine: 'After curative-intent surgery for gastric cancer, recurrence is:'
   AsnwerSlot:
-  - Rare
-  - Common, especially within 2 years
-  - Only seen after 10 years
-  - Never occurs
-  IsCorrectAnswer: 00010000
-  Reference: "4.\tShin CH, Lee WY, Hong SW, Chang YG. Characteristics of gastric
+  - Rare in the first 2 years
+  - Most common after 10 years
+  - Common, especially within the first 2 years
+  - Seen only in node-positive disease
+  IsCorrectAnswer: 00000100
+  Reference: 'Reference: Shin CH, Lee WY, Hong SW, Chang YG. Characteristics of gastric
     cancer recurrence five or more years after curative gastrectomy. Chin J Cancer
-    Res. 2016 Oct;28(5):503-510."
+    Res. 2016;28(5):503-510. '
