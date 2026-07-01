@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class GameManager : MonoBehaviour
     private List<GameObject> questionCampaignMCQs, questionMedicalMCQs;
 
     [SerializeField]
-    private GameObject[] buttonInteractable;
+    private XRSimpleInteractable[] buttonInteractable;
 
     [SerializeField]
     private SplineAnimate[] splineAnimate;
@@ -44,6 +45,11 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+    }
+
+    private void Start()
+    {
+        AppearsQuestion();
     }
 
     /*
@@ -145,7 +151,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        buttonInteractable[buttonIndex].SetActive(true);
+        buttonInteractable[buttonIndex].enabled = true;
         buttonIndex++;
         Debug.Log("Button index: " + buttonIndex);
     }

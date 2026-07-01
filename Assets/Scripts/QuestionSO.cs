@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class QuestionSO : MonoBehaviour
 {
@@ -14,17 +15,21 @@ public class QuestionSO : MonoBehaviour
     private TextMeshProUGUI[] answerslot;
 
     [SerializeField]
-    private TextMeshProUGUI reference;
+    private GameObject reference;
 
     [SerializeField]
     private AudioSource[] audioclips;
+
     public Image[] images;
+    public Image[] CheckImage;
 
     public Sprite CorrectAnswer;
     public Sprite WrongAnswer;
     public Sprite Defaultsprite;
 
-    
+    public Sprite CheckSprite;
+    public Sprite WrongSprite;
+    public Sprite[] defualtCheckSprite;
 
     private void Awake()
     {
@@ -34,7 +39,7 @@ public class QuestionSO : MonoBehaviour
             answerslot[i].text = question.AsnwerSlot[i];
         }
 
-        reference.text = question.Reference;
+        reference.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = question.Reference;
     }
 
     public void CheckAnswer(int index)
@@ -55,9 +60,11 @@ public class QuestionSO : MonoBehaviour
 
             }
 
+            CheckImage[index].sprite = CheckSprite;
+
             images[index].sprite = CorrectAnswer;
 
-            reference.gameObject.SetActive(true);
+            reference.SetActive(true);
 
             //GameManager.Instance.CorrectAnswer();
             Invoke(nameof(DelayAnswer), 3f); // Delay the correct answer action by 1 second
@@ -82,7 +89,9 @@ public class QuestionSO : MonoBehaviour
 
             }
 
-            reference.gameObject.SetActive(true);
+            CheckImage[index].sprite = WrongSprite;
+
+            reference.SetActive(true);
 
             //images[index].sprite = WrongAnswer;
 
@@ -95,12 +104,18 @@ public class QuestionSO : MonoBehaviour
 
 private void DelayAnswer()
     {
+        reference.SetActive(false);
+
         for(int i = 0; i < images.Length; i++)
         {
             images[i].sprite = Defaultsprite;
         }
 
-        reference.gameObject.SetActive(false);
+        for (int i = 0; i < CheckImage.Length; i++)
+        {
+            CheckImage[i].sprite = defualtCheckSprite[i];
+        }
+
 
         GameManager.Instance.AppearingHook();
     }
